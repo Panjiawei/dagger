@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
-
+//添加如下代码，应用apt插件
+//apply plugin: 'com.neenbedankt.android-apt'
 android {
     compileSdkVersion 26
     defaultConfig {
@@ -39,5 +40,10 @@ dependencies {
     api 'com.squareup.retrofit2:converter-gson:2.1.0'
     api 'com.squareup.okhttp3:okhttp:3.5.0'
     api 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+
+    api 'com.google.dagger:dagger:2.4'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.4'
+    //java注解
+    api 'org.glassfish:javax.annotation:10.0-b28'
 
 }

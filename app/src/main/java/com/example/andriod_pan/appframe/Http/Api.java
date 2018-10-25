@@ -42,7 +42,7 @@ public class Api {
                     .client(httpClientBuilder.build())
                     .addConverterFactory(GsonConverterFactory.create())
                     .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
-                    .baseUrl(Url.BASE_URL)
+                    .baseUrl(ApiService.BASE_URL)
                     .build().create(ApiService.class);
         }
         return SERVICE;
